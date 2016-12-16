@@ -1,0 +1,49 @@
+#artwork, #artwork-blur {
+  border-radius: 2vh;
+  display: none;
+  height: 40%;
+  width: auto;
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  border: none;
+}
+
+#artwork-blur {
+  filter: blur(10px);
+  opacity: 0.3;
+}
+
+.song-info {
+  position: absolute;
+  height: 40%;
+  max-width: 30%;
+  top: 35%;
+  left: 20%;
+  color: #EBE9E6;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 4.5vw;
+}
+
+#artist {
+  font-size: 40%;
+  margin-top: 2%;
+  font-weight: 100;
+  color: #EBE9E6;
+}
+
+.alert {
+  position: absolute;
+  top: 48%;
+  width: 80%;
+  padding: 2%;
+  left: 10%;
+  text-align: center;
+  padding: 1%;
+  font-family: 'Raleway', sans-serif;
+  color: #EBE9E6;
+  font-size: 2vw;
+  font-weight: 100;
+  display: none;
+}

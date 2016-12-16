@@ -1,0 +1,45 @@
+.settings-container {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: default;
+}
+
+.setting {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 200%;
+  font-family: 'Raleway', sans-serif;
+  color: #EBE9E6;
+  font-weight: 100;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-model {
+  margin-top: 8%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  outline: none;
+  padding: 3% 9% 3% 9%;
+  border: 2px solid #f7f7f7;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #f7f7f7;
+  transition: 0.3s;
+  overflow: hidden;
+  font-size: 150%;
+}
+
+.close-model:hover {
+  cursor: pointer;
+  border-color: #3498db;
+}
