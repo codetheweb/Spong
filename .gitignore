@@ -1,3 +1,10 @@
+# Ignore builds in dist/
+dist
+
+###############################################
+# NodeJS and NPM stuff (auto added by Github) #
+###############################################
+
 # Logs
 logs
 *.log
