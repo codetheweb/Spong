@@ -1,3 +1,7 @@
+html, body {
+  cursor: none;
+}
+
 #artwork, #artwork-blur {
   border-radius: 2vh;
   display: none;
@@ -20,17 +24,23 @@
   max-width: 30%;
   top: 35%;
   left: 20%;
-  color: #EBE9E6;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 4.5vw;
+}
+
+.song-info.defaultColors > #song {
+  color: white !important;
 }
 
 #artist {
   font-size: 40%;
   margin-top: 2%;
   font-weight: 100;
-  color: #EBE9E6;
+}
+
+.song-info.defaultColors > #artist {
+  color: #EBE9E6 !important;
 }
 
 .alert {

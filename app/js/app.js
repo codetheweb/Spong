@@ -37,12 +37,7 @@ $(document).keydown(function(event) {
     console.log('Space pressed');
     helper.player.pause(!helper.status.playing);
   }
-  if (event.keyCode == 39) {
-    console.log('Right arrow pressed');
-  }
-  if (event.keyCode == 37) {
-    console.log('Left arrow pressed');
-  }
+  return;
 });
 
 // Tells user Spotify isn't running and hides song info
@@ -131,19 +126,20 @@ function getArtwork(id, callback) {
 
 // Sets background and foreground colors
 function setColors(palette) {
-  console.log(palette);
-  console.log(palette['LightVibrant'].getHex());
   if (config.get('reactiveBackground') == true) {
     $('html, body').css({'background-color': palette['DarkMuted'].getHex()});
+    ('html, body').removeClass('defaultColors');
   }
   else {
     $('html, body').css({'background-color': '#141619'});
+    $('html, body').addClass('defaultColors');
   }
   if (config.get('reactiveForeground') == true) {
     $('.song-info').css({'color': palette['LightVibrant'].getHex()});
+    $('.song-info').removeClass('defaultColors');
   }
   else {
-    $('.song-info').css({'color': '#EBE9E6'});
+    $('.song-info').addClass('defaultColors');
   }
   return;
 }

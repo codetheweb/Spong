@@ -32,7 +32,7 @@ function createWindow() {
           label: 'Settings',
           accelerator: 'Cmd+,',
           click: () => {
-            let settings = new BrowserWindow({parent: mainWindow, titleBarStyle: 'hidden-inset', backgroundColor: '#141619'});
+            let settings = new BrowserWindow({parent: mainWindow, titleBarStyle: 'hidden-inset', backgroundColor: '#141619', frame: false});
             settings.loadURL(url.format({
               pathname: path.join(__dirname, 'app/settings.html'),
               protocol: 'file:',
@@ -54,7 +54,7 @@ function createWindow() {
   
   const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize;
   
-  mainWindow = new BrowserWindow({width: width, height: height, minHeight: 600, minWidth: 800, titleBarStyle: 'hidden-inset', backgroundColor: '#141619', icon: path.join(__dirname, 'app/icons/png/64x64.png')});
+  mainWindow = new BrowserWindow({width: width, height: height, minHeight: 600, minWidth: 800, titleBarStyle: 'hidden-inset', backgroundColor: '#141619'});
   
   mainWindow.setAspectRatio(width / height);
   
