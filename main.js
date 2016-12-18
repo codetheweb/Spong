@@ -9,9 +9,6 @@ const url = require('url');
 const Config = require('electron-config');
 const config = new Config();
 
-// Debug
-require('electron-debug')({showDevTools: true});
-
 let mainWindow;
 
 // Set config for the first time
